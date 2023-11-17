@@ -29,4 +29,4 @@ async def on_message(message):
 try:
     client.run(TOKEN)
 except discord.errors.LoginFailure as e:
-    print("Improper token has been passed.")
+    print("토큰 에러. 토큰을 확인해주세요. 에러 내용: {e}")
